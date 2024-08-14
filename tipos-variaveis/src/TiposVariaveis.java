@@ -1,8 +1,14 @@
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
 public class TiposVariaveis {
     public static void main(String[] args) throws Exception {
+        // Define a codificação padrão do sistema para UTF-8
+        PrintWriter writer = new PrintWriter(new OutputStreamWriter(System.out, StandardCharsets.UTF_8), true);
+        writer.println("Tipos de Variáveis");
         // Tipos primitivos: int, byte, short, long, float, double, boolean e char
         // Data Type	Size	Default	Range
         // byte	        1 byte	0	    -128 to 127
@@ -20,6 +26,7 @@ public class TiposVariaveis {
         long cpf = 87721711037L; // se começar com zero, talvez tenha que colocar com outro tipo
         float pi = 3.14F;
         double salario = 1275.33;
+        char sexo = 'M';
         // java é fortemente "tipado"
         short numeroCurto =1;
         int numeroNormal = numeroCurto;
