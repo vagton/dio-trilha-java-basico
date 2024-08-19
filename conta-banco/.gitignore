@@ -23,3 +23,6 @@
 hs_err_pid*
 replay_pid*
 conta-banco/.vscode/settings.json
+
+#vscode
+.vscode/settings.json
