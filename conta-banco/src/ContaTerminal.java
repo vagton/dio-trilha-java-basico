@@ -32,7 +32,7 @@ public class ContaTerminal {
         //O Locale esteja configurado corretamente para aceitar o formato decimal que você está utilizando. 
         // No Brasil, por exemplo, o formato decimal com "," (vírgula), enquanto em muitos outros locais é . (ponto).
         // Por isso como no projeto manda colocar "." então usarei um tratamento para isso.
-        Scanner scanner = new Scanner(System.in).useLocale(Locale.forLanguageTag("pt-BR"));
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.forLanguageTag("en-US")); // se for Brasileiro colocar pt-BR
 
         String nomeCliente = "";
         String numeroAgencia = "";
